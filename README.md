@@ -52,5 +52,6 @@ We have 3 portable enumerations. They are Animal, Category and Role. An animal c
 - Product List: displays a list of products that we are selling.
 - Product Editor: displays a particular product for editing or allows creating a new product and navigate to the supplier of that product. 
 
-## Repos
+## Repos and document
+- Document: https://docs.google.com/document/d/1kvgpPAwwA3jmWzlpvEBeDLo0sCkEJGYlA935w0OUsQo/edit#
 - Node server: https://github.com/caijiah/cs5200-final-server-node
