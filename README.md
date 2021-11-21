@@ -18,7 +18,7 @@ In this project, we are going to build a full-stack web application to support a
 
 ## Link to the latest data model as a single UML class diagram.
 - UML class diagram
-[db_design_final_project_UML.pdf](https://github.com/caijiah/cs5200-final-project/files/7576976/db_design_final_project_UML.pdf)
+[db_design_final_project_UML.pdf](https://github.com/caijiah/cs5200-final-project/blob/main/db_design_final_project_UML.pdf)
 - Data model:
 https://lucid.app/lucidchart/48597b87-57ed-436e-9aed-0af728e3bdfc/edit?viewport_loc=-11%2C-11%2C1472%2C659%2C0_0&invitationId=inv_c5f302a0-bf3c-4731-9d91-3c1e8e36664a
 
