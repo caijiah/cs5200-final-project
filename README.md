@@ -58,5 +58,8 @@ We have 3 portable enumerations. They are Animal, Category and Role. An animal c
 - React client: https://github.com/caijiah/cs5200-final-react
 
 ## Heroku deployment
-- Frontend client link: https://dashboard.heroku.com/apps/cs5200-final-client-react
-- Backend server link: https://dashboard.heroku.com/apps/cs5200-final-server-node
+- Frontend client link: https://cs5200-final-client-react.herokuapp.com/
+- Backend server link: https://cs5200-final-server-node.herokuapp.com/
+- Example Users: 
+- {username: Alice, password: 123} <- Customer
+- {username: acana, password: 123} <- Supplier
