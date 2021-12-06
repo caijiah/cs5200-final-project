@@ -55,3 +55,8 @@ We have 3 portable enumerations. They are Animal, Category and Role. An animal c
 ## Repos and document
 - Document: https://docs.google.com/document/d/1kvgpPAwwA3jmWzlpvEBeDLo0sCkEJGYlA935w0OUsQo/edit#
 - Node server: https://github.com/caijiah/cs5200-final-server-node
+- React client: https://github.com/caijiah/cs5200-final-react
+
+## Heroku deployment
+- Frontend client link: https://dashboard.heroku.com/apps/cs5200-final-client-react
+- Backend server link: https://dashboard.heroku.com/apps/cs5200-final-server-node
