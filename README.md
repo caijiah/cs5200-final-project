@@ -39,10 +39,11 @@ We have 2 domain to domain object relationships. They are Order to Product(one t
 We have 3 portable enumerations. They are Animal, Category and Role. An animal can be “CAT”, “DOG”, “FISH”, “BIRD”. A category of an item can be “FOOD”, “TOY”, “TREAT”, “MEDICINE”. A user can be either “CUSTOMER” or “SUPPLIER”. 
  
 ## Description of the user interface requirements
-- User List: displays a list of all users. 
-- User Editor: displays a particular user for editing or allows creating a new user. 
-- Customer List: displays a list of all customers. 
-- Customer Editor: displays a particular customer for editing and allows navigating to the shopping cart for that customer. 
+- Log in Page: Requires user's username and password to login and directs to user's profile page.
+- Sign up Page: Requires user's information and create a new user.
+- User Profile Page: displays a user's profile.
+- User Profile Editor: displays a user's profile and enables user to edit profile. 
+- Referral List: displays all users referred by this user. 
 - Shopping Cart List: displays a list of products that are selected by a given customer. 
 - Shopping Cart Editor: displays a particular shopping cart for editing and allows navigating to the customer who owns that shopping cart. 
 - Order List: displays a list of orders that are placed by a given customer. 
