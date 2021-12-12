@@ -9,7 +9,7 @@
 
 - Pet lovers (Group 3)
 
-#### team members
+#### Team members
 
 - Jiahao Cai, Ye Bai, Yuwei Hou
 
@@ -25,12 +25,37 @@ In this project, we are going to build a full-stack web application to support a
 - Data model:
 https://lucid.app/lucidchart/48597b87-57ed-436e-9aed-0af728e3bdfc/edit?viewport_loc=-11%2C-11%2C1472%2C659%2C0_0&invitationId=inv_c5f302a0-bf3c-4731-9d91-3c1e8e36664a
 
+## Problem statement
+The objective of our project is to build a full stack web application, serving as a mediator between our suppliers and customers, to allow them perform some basic actions on our website. 
+
+We should start with designing a normalized database to map all the business needs of two types of users. It has at least two users, two domain objects, a relationship between a user and a domain object, a relationship between user objects and a relationship between domain objects. The relationship should either be one to many or many to many. 
+
+After that, we need to create a database to store all the related data, develop and connect backend and frontend to support the website, and then conduct several tests on the website to make sure all the functions are working well.
+
+## Solution statement
+We built a full stack web application to support an online pet shop that sells pet supplies. There are four categories, including food, toys, treats and medicine. We have two types of user: customer and supplier. Both customer and supplier inherit from the user interface. We have four domain objects: pet, order, product and shopping cart. There are four relationships between a user and a domain object: customer-pet, customer-shoppingCart, customer-order, supplier-product. There are two relationships between domain objects: order-product, shoppingCart-product. And the relationship between user objects is customer-referrer(customer). 
+	
+We used MERN (MongoDB, Express, React, Node) Stack to implement our project. Specifically, we used mongoDB to handle database management, reifying classes and these relationships mentioned above. We also used Mongoose to map the objects in MongoDB to objects in code by creating schemas and models for classes described above. Then, we used the Express.js server-side framework, running inside a Node.js server to interact with our database in order to integrate our database and handle client-side HTTP Requests that allows the outside world to have access to our database. For the client side, we developed our website using React.js.
+
+On our website, users need to register either as customers or suppliers. Customers can login to browse the products, add products into shopping carts and finally place orders. In the meanwhile, suppliers can login to our website to update the product information and inventory. 
+
 ## Description of user data models
-We have 2 user data models included in our project, which are Customer and Supplier (representative). Customers are the users who will shop on our website. Supplier representatives are the users who will log into our website to update products inventory.
-There is a user to user relationship (one to many) between Customer and Customer itself. A new customer can be referred by an existing customer and existing customers can refer many new customers.
+There are two users involved in our project, which are customers and suppliers. The backend and frontend aim to support their basic operations to interact with the website. 
+
+As a pets supplier website, we make our profit by attracting visitors to sign up and to further make purchases. Once a website visitor signs up for a new account and indicates the role as ‘CUSTOMER’, then he or she will become a customer of our website. The website allows customers to complete the full purchase cycle, which includes browsing the products, adding them into the shopping cart, and placing the order. Customers can establish profiles for their pets too! They are also encouraged to refer new customers to join our website. The new customers will indicate the referral when they sign up. After logging in, customers can manage the pets profile, check the orders details and referral list.
+
+We need to partner with suppliers to ensure the supply of our products. As another important user of our website, supplier representatives will register an account to maintain the inventory of the products that they supply. Suppliers will indicate the role as ‘SUPPLIER’ when they sign up and also provide the company name. Once logged in, they are allowed to add, delete and update products, to modify the product name, category, animal type, weight, price and available quantity on the browse page.
 
 ## Description of the domain object data models
-We have 4 domain data models involved in the project, including Pet, Product, ShoppingCart and Order. Customers’ pets data will be stored in the Pet data model. Product stores the product-related information, such as category, unitprice and inventory. ShoppingCart stores customer’s shopping cart information, including product, quantity and total price. After customers make a purchase, order data will be saved into the Order data model to keep track of the order placed date, total price and the product related information.
+We have four domain objects included in the projects, which are Product, ShoppingCart, Order and Pet.
+
+Product stores the information of the products we sell on our website, such as name, category, animal type, weight, price and quantity. On the shopping page, all the products are listed combined with their information. The products can be further filtered by Brands, Animals or Category. This would help our customers quickly navigate to the products that they are looking for.
+
+ShoppingCart stores customer’s shopping cart information, such as product, quantity and total price. Each customer only has one shopping cart. When products are added into the shopping cart, the shopping cart will update in real time and the total price will automatically refresh and directly show on the bottom.
+
+After a customer makes a purchase, order data will be saved into the Order data model to keep track of the order date, total price and the product related information. Customers are able to check out all the history orders details under the ‘My orders’ page. 
+
+Pet domain object saves all the pet information provided by the customers. One customer may have many pets. He or she can record all those pets on our website. Under the ‘My pet’ page, customers are allowed to add, delete or update their pets profile, to modify pet name, age, breed, gender and animal type.
 
 ## Description of the user to domain object relationships
 We have 4 user to domain relationships. They are Customer to Pet(one to many relationship), Customer to ShoppingCart(one to one relationship), Customer to Order(one to many relationship) and Supplier to Product(one to many relationship). One customer can own many pets; One customer can have a shopping cart that records items selected by a customer for purchase; One customer can place multiple orders; One supplier can update multiple products’ inventory. 
