@@ -13,6 +13,9 @@
 
 - Jiahao Cai, Ye Bai, Yuwei Hou
 
+## P1 Summary
+https://docs.google.com/document/d/1kvgpPAwwA3jmWzlpvEBeDLo0sCkEJGYlA935w0OUsQo/edit#
+
 ## P3 Summary
 https://docs.google.com/document/d/1BtqynYbjB3iV6850LLebgSTpCVQF0YaKojhmgAZ0Uas/edit?usp=sharing
 
