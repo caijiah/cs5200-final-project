@@ -13,6 +13,9 @@
 
 - Jiahao Cai, Ye Bai, Yuwei Hou
 
+## P3 Summary
+https://docs.google.com/document/d/1BtqynYbjB3iV6850LLebgSTpCVQF0YaKojhmgAZ0Uas/edit?usp=sharing
+
 ## Brief description of the project
 In this project, we are going to build a full-stack web application to support an online pet store to sell pet supplies, food, treats and medicine. We will utilize mongoDB to handle database management. The database will integrate with a website that allows customers to log in, browse the products, add products into shopping carts and finally make the purchase. In the meanwhile, we have our suppliers logging into our website to update the product description and inventory. 
 
